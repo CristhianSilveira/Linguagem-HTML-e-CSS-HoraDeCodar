@@ -205,3 +205,115 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
         A propriedade text-shadow adiciona sombra ao texto. Em seu uso mais simples, você especifica apenas a sombra horizontal e a sombra vertical. Em seguida, adicione um efeito de desfoque à sombra. Em seguida, adicione uma cor à sombra. :   EX:   text-shadow: 2px 2px 5px red;
 
 9- Fontes:
+    9.1- Introdução: 
+        Escolher a fonte certa tem um grande impacto em como os leitores experimentam um site. A fonte certa pode criar uma identidade forte para sua marca. Usar uma fonte fácil de ler é importante. A fonte agrega valor ao seu texto. Também é importante escolher a cor e o tamanho do texto corretos para a fonte.
+        
+    9.2- Famílias de Fontes: 
+        Em CSS existem cinco famílias de fontes genéricas: (1) fontes serifadas [têm um pequeno traço nas bordas de cada letra. Eles criam uma sensação de formalidade e elegância.]; (2) fontes sem serifa [têm linhas limpas (sem pequenos traços anexados). Eles criam um visual moderno e minimalista.]; (3)Fontes monoespaçadas  [aqui todas as letras têm a mesma largura fixa. Eles criam uma aparência mecânica.];  (4) fontes cursivas [imitam a caligrafia humana.]; (5)Fontes fantasia [são fontes decorativas/divertidas.].   Em CSS, usamos a propriedade font-family para especificar a fonte de um texto.   EX: font-family: "Times New Roman", Times, serif;
+
+    9.3- Fontes Alternativas: 
+        É muito importante sempre usar fontes alternativas. isso significa que você deve adicionar uma lista de "fontes de backup" semelhantes na propriedade font-family. Se a primeira fonte não funcionar, o navegador tentará a próxima, a próxima e assim por diante. Sempre termine a lista com um nome de família de fonte genérico.   EX: font-family: Arial, Tahoma, Verdana, sans-serif;
+
+    9.4- Fontes mais usadas:
+        9.4.1- Fontes Serifadas: 
+            "Times New Roman", Times, serif; Georgia, serif; Garamond, serif;   (1) A Times New Roman é uma das fontes mais conhecidas do mundo. Parece profissional e é usado em muitos jornais e sites de "notícias". Também é a fonte principal para dispositivos e aplicativos do Windows.   (2) Georgia é uma fonte elegante com serifa. É muito legível em diferentes tamanhos de fonte, por isso é um bom candidato para design responsivo para dispositivos móveis.   (3) Garamond é uma fonte clássica usada para muitos livros impressos. Tem uma aparência atemporal e boa legibilidade.
+                
+        9.4.2- Fontes Sans-Serif: 
+            Arial, Helvetica, sans-serif; Tahoma, Verdana, sans-serif; "Trebuchet MS", Helvetica, sans-serif; Geneva, Verdana, sans-serif;   (1) Arial é a fonte mais amplamente usada para mídia online e impressa. Arial também é a fonte padrão no Google Docs. Arial é uma das fontes da web mais seguras e está disponível em todos os principais sistemas operacionais.   (2) Verdana é uma fonte muito popular. Verdana é facilmente legível, mesmo para tamanhos de fonte pequenos.   (3) A fonte Tahoma tem menos espaço entre os caracteres.   (4) Trebuchet MS foi desenvolvido pela Microsoft em 1996. Use esta fonte com cuidado. Não suportado por todos os sistemas operacionais móveis.
+
+        9.4.3- Fontes monoespaçadas: 
+            "Courier New", Courier, monospace;   (1) Courier New é a fonte serif monoespaçada mais usada. Courier New é frequentemente usado com exibições de codificação e muitos provedores de e-mail o usam como fonte padrão. Courier New também é a fonte padrão para roteiros de filmes.
+                
+        9.4.4- Fontes cursivas: 
+            "Brush Script MT", cursive;   (1) A fonte Brush Script MT foi projetada para imitar a caligrafia. É elegante e sofisticado, mas pode ser difícil de ler. Use-o com cuidado.
+                
+        9.4.5- Fontes Fantasia: 
+            Copperplate, Papyrus, fantasy
+
+    9.5- Estilo da Fonte: 
+        A propriedade font-style é usada principalmente para especificar texto em itálico. Esta propriedade tem três valores: normal - [O texto é mostrado normalmente], italic [O texto é mostrado em itálico] e oblique [O texto está "inclinado" (oblique é muito semelhante ao itálico, mas menos suportado)].   EX: p { font-style: italic;}
+                
+        9.5.1- Espessura da fonte: 
+            A propriedade font-weight especifica o peso de uma fonte:   EX: p {font-weight: bold;}
+        
+    9.6- Tamanho da fonte: 
+        A propriedade font-size define o tamanho do texto.
+        
+        9.6.1- Definir tamanho da fonte com pixels:   
+            EX:  p {font-size: 14px;}
+                
+        9.6.2- Definir tamanho da fonte com Em:   
+            EX: p {font-size: 0.875em;} (No exemplo ao lado, o tamanho do texto em EM é o mesmo do exemplo anterior em pixels. Porém, com o tamanho em, é possível ajustar o tamanho do texto em todos os navegadores.)
+                
+        9.6.3- Tamanho da fonte responsiva: 
+            O tamanho do texto pode ser definido com uma unidade vw, o que significa a "largura da janela de visualização". Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:   EX: p {font-size:10vw} OBS: Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+
+    9.7- Fontes do Google:
+        9.7.1- Como usar as fontes do Google: 
+            Basta adicionar um link de folha de estilo especial na seção <head> e, em seguida, consultar a fonte no CSS.   EX: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">; p {font-family: "Audiowide", sans-serif;}
+
+    9.8- Taquigrafia das Fontes: 
+        A propriedade font é uma propriedade abreviada para: (1)font-style, (2)font-variant, (3)font-weight, (4)font-size e (5)font-family.   EX: font: italic small-caps bold 12px Georgia, serif;
+
+10- Links: 
+    10.1- Introdução:
+        Com CSS, os links podem ser estilizados de várias maneiras diferentes.
+        
+    10.2- Links de estilo: 
+        Os links podem ser estilizados com qualquer propriedade CSS (por exemplo color, font-family, background, etc.). Além disso, os links podem ter estilos diferentes, dependendo do estado em que estão. Os quatro estados dos links são: (1) a:link [um link normal não visitado], (2) a:visited [um link que o usuário visitou], (3) a:hover [um link quando o usuário passa o mouse sobre ele] e (4) a:active [um link no momento em que é clicado].   OBS: Ao definir o estilo para vários estados de link, existem algumas regras de ordem: a:hover DEVE vir depois de a:link e a:visited e a:active DEVE vir depois de a:hover
+
+    10.3- Decoração de texto: 
+        A propriedade text-decoration é usada principalmente para remover sublinhados de links:   EX: a:visited {text-decoration: none;}
+
+    10.4- Cor de fundo: 
+        A propriedade background-color pode ser usada para especificar uma cor de fundo para links:   EX:   a:hover {background-color: cyan;}
+
+    10.5- Exemplo completo: 
+        a:link, a:visited {background-color: white; color: black; border: 2px solid green; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block;}   a:hover, a:active { background-color: green; color: white;}   Explicando: a:link e a:visited (possuí um background branco, cor de texto preto, borda solida verde, texto centralizado e sem underline no link), a:hover e a:active (quando passar o mouse ou clicar no link, ele vai passar a ter um background verde e cor de texto branco)
+
+11- Display:
+    11.1- Introdução: 
+        A propriedade display é a propriedade CSS mais importante para controlar o layout. Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento. O valor de exibição padrão para a maioria dos elementos é block ou inline.
+                
+    11.2- Elementos de nível de bloco: 
+        Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível). Exemplos de elementos de nível de bloco: <div>, <h1> - <h6>, <p>, <form>, <header>, <footer> e <section>.   EX: a {display: block;}
+
+    11.3- Elementos embutidos/inline: 
+        Um elemento inline não começa em uma nova linha e ocupa apenas a largura necessária.Exemplos de elementos embutidos: <período>, <a> e <img>. Um exemplo comum é criar elementos <li> embutidos para menus horizontais:   EX: li {display: inline;}
+
+    11.4- Bloco embutido: 
+        display: inline-block permite definir uma largura e altura no elemento, as margens/preenchimentos superiores e inferiores são respeitados, não adiciona uma quebra de linha após o elemento, para que o elemento possa ficar próximo a outros elementos. Um uso comum para display: inline-block é exibir itens de lista horizontalmente em vez de verticalmente. O exemplo a seguir cria links de navegação horizontal:   EX: nav {background-color: yellow; list-style-type: none; text-align: center;  padding: 0; margin: 0;}   nav.li {display: inline-block; font-size: 20px; padding: 20px;}
+
+    11.5- Mostrar nenhum; 
+        display: none; é comumente usado com JavaScript para ocultar e mostrar elementos sem excluí-los e recriá-los.   EX:  h1 {display: none;}   OBS: visibility:hidden; também esconde um elemento. No entanto, o elemento ainda ocupará o mesmo espaço de antes. O elemento ficará oculto, mas ainda afetará o layout:   EX: h1 {visibility: hidden;}
+
+12- Position:
+    12.1- Introdução: 
+        A propriedade position especifica o tipo de método de posicionamento usado para um elemento. Existem cinco valores de posição diferentes: static, relative, fixed, absolute e sticky
+                
+    12.2- Posição Estática: 
+        Os elementos HTML são posicionados estáticos por padrão. Os elementos posicionados estáticos não são afetados pelas propriedades superior, inferior, esquerda e direita. Um elemento com position: static; não é posicionado de nenhuma maneira especial; está sempre posicionado de acordo com o fluxo normal da página:   EX: div {position: static;}
+
+    12.3- Posição Relativa: 
+        Um elemento com position: relative; é posicionado em relação à sua posição normal. Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente posicionado fará com que ele seja ajustado para longe de sua posição normal. Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento.   EX: div {position: relative; left: 30px;}
+
+    12.4- Posição Fixa: 
+        Um elemento com position: fixed; é posicionado em relação à viewport, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada. As propriedades superior, direita, inferior e esquerda são usadas para posicionar o elemento. Um elemento fixo não deixa uma lacuna na página onde normalmente estaria localizado.   EX: div{position: fixed; bottom: 0; right: 0; width: 300px;}
+
+    12.5- Posição Absoluta: 
+        Um elemento com position: absolute; é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à viewport, como fixo). No entanto; se um elemento posicionado absoluto não tiver ancestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página.   EX: div {position: absolute; top: 80px; right: 0; width: 200px; height: 100px;}
+
+    12.6- Posição Grudada: 
+        Um elemento com position: sticky; é posicionado com base na posição de rolagem do usuário. Um elemento fixo alterna entre relative e fixed, dependendo da posição de rolagem. Ele é posicionado relativo até que uma determinada posição de deslocamento seja encontrada na viewport - então ele "gruda" no lugar (como position:fixed).   EX: { position: sticky; top: 0; background-color: green; border: 2px solid #4CAF50;}
+
+13- z-index:
+    13.1- Introdução: 
+        A propriedade z-index: Quando os elementos são posicionados, eles podem se sobrepor a outros elementos. A propriedade z-index especifica a ordem da pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros). Um elemento pode ter uma ordem de pilha positiva ou negativa:   EX: img {position: absolute; z-index: -1;} (imagem ficará atrás de tudo)
+
+14- Overflow:
+    14.1- Introdução:
+        A propriedade overflow especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada. A propriedade overflow tem os seguintes valores: visible [Padrão. O overflow não é cortado. O conteúdo renderiza fora da caixa do elemento]; hidden [O overflow é cortado e o restante do conteúdo ficará invisível]; scroll [O overflow é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo] e auto [Semelhante ao scroll, mas adiciona barras de rolagem somente quando necessário].   EX: div {overflow: auto;}
+
+15- Float:
+    15.1- Float: 
+        A propriedade float é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner. A propriedade float pode ter um dos seguintes valores: left [O elemento flutua à esquerda de seu contêiner], right [O elemento flutua à direita de seu contêiner], none [O elemento não flutua (será exibido apenas onde ocorre no texto). Isso é padrão], inherit [O elemento herda o valor float de seu pai].   EX:  img {float: right;} (O exemplo ao lado especifica que uma imagem deve flutuar à direita)

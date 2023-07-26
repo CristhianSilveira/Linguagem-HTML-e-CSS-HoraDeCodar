@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap'); /* Importando fonte do google*/
+
+
 *{ /* Seletor Universal */
     padding: 0;
 }
@@ -98,6 +101,37 @@ h1, h2 { /* Seletor de Agrupamento */
 
 
 /* FONTES */
-.fontes {
-    top: 20px;
+.fontes {  
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Arial;
+    
+    font: normal small-caps 400 20px  Arial; /* Taquigrafia/shorthand */
 }
+.importada{
+    font-family: 'Tektur', cursive;
+}
+
+
+/* LINKS */
+.links > a{      
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 10px; 
+    cursor: wait;  
+}
+.links > a:hover, a:active {
+    border: 3px solid blue;
+    background-color: black;
+    color: white;   
+    padding: 15px;
+}
+
+
+/* DISPLAY */
+   
