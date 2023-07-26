@@ -1,0 +1,103 @@
+*{ /* Seletor Universal */
+    padding: 0;
+}
+
+span { /* Seletor de elemento */
+    background-color: aqua; 
+}
+
+.center { /* Seletor de Classe */
+    text-align: center;
+    color: green;
+}
+
+#teste { /* Seletor de ID */
+    color: blue;
+}
+
+h1, h2 { /* Seletor de Agrupamento */
+    text-decoration: underline;
+}
+
+
+/* BACKGROUND */
+.teste-back {
+    height: 300px;
+    
+    background-color: lightblue;   
+    background-image: url("Multimidia/penhasco.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+    
+    background-size: cover;
+    
+    background: lightblue url("Multimidia/penhasco.jpg") no-repeat scroll bottom; /* Taquigrafia */
+}
+
+
+/* BORDER */
+.bordas {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    
+    border: 3px solid black; /* Taquigrafia/shorthand */
+    border-radius: 10px;
+}
+
+
+/* MARGIN */
+/* Usar o inspecionar do navegador para visualizar */
+.margens {
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    
+    margin: 30px 70px 50px 20px; /* Taquigrafia/shorthand */
+    border: 2px solid black;
+}
+
+
+/* PADDING */
+/* Usar o inspecionar do navegador para visualizar */
+.padd {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 70px;
+    
+    padding: 50px 70px 20px 10px; /* Taquigrafia/shorthand */
+    border: 2px solid black;
+}
+
+
+/* WIDTH e HEIGHT */
+.altura {
+    max-width: 500px;
+    min-height: 150px;
+
+    background-color: cyan;
+}
+
+
+/* TEXT */
+.texto {
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 5px red;
+
+    color: blue;
+}
+
+
+/* FONTES */
+.fontes {
+    top: 20px;
+}

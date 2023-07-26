@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- head é a configuração da página-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!--body é onde os elementos que aparecem na tela estão-->
+<body >
+    <!-- Tags de texto-->
+    <h1>Título:</h1>
+
+    <h2>Algum título</h2>
+    <h3>Outro título</h3>
+    <h6>Mais um título</h6>
+
+    <h1>Parágrafo:</h1>
+    <p>Aqui eu posso escrever um texto longo.</p>
+
+    <h1>Formatação:</h1>
+    <p>Eu tenho um texto e <strong>isso é importante.</strong></p>
+    <p>Eu tenho um texto e <em>isso é importante.</em></p>
+
+    <!-- Imagens e links-->
+    <h1>Imagens:</h1>
+    <img src="../Multimidia/fundopreto.png" alt="Fundo Preto">
+
+    <h1>Links:</h1>
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!--Listas-->
+    <h1>Listas:</h1>
+    
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+        <li>Acordar</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+        <li>Jogar</li>
+    </ul>
+
+    <h2 id="meu-titulo">Lista Ordenada</h2>
+    <ol>
+        <li class="item">Fazer a massa</li>
+        <li class="item">Assar alguma coisa</li>
+        <li class="item">Decorar o bolo</li>
+        <li class="item">Colocar a cereja</li>
+    </ol>
+
+    <!--Tabelas-->
+    <h1>Tabelas:</h1>
+    
+    <table>
+        <tr>
+            <th>Nome:</th>
+            <th>Profissão:</th>
+        </tr>
+        <tr>
+            <td>Cristhian</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Engenherio</td>
+        </tr>
+    </table>
+
+    <!--Formulários-->
+    <h1>Formulários:</h1>
+    
+    <form action="/processar_form.php" method="post">
+        <input type="text" name="Nome_completo" id="" placeholder="Digite seu nome">
+        <br>
+        
+        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Deixe seu comentario"></textarea>
+        <br>
+        
+        <select name="marca_de_carro" id="">
+            <option value="">Ferrari</option>
+            <option value="">BMW</option>
+            <option value="">Audi</option>
+        </select>
+        <br>
+        
+        <input type="email" name="email" id="">
+        <br>
+
+        <input type="password" name="senha" id="">
+        <br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--Elemento de bloco-->
+    <h1>Elemento de bloco</h1>
+
+    <div>
+        <h3>Algum texto</h3>
+        <p>Algum conteúdo</p>
+    </div>
+
+    <header>
+        <h4>Minha marca</h4>
+        <nav>
+            <a href="@">Home</a>
+            <a href="@">Blog</a>
+        </nav>
+    </header>
+
+    <footer>
+        <p>Cristhian @ 2023</p>
+    </footer>
+    
+</body>
+</html>

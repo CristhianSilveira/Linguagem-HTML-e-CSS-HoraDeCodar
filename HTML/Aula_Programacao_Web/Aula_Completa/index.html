@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin:0;
+        }
+
+        .topo {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+
+        .coluna-50 {
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <hr>
+
+    <h1>Texto em Negrito</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Mollitia corrupti</strong> provident possimus et, minus eius ab iusto deleniti delectus quo dignissimos velit! Nisi voluptatibus quaerat repellendus <b>minima maiores</b>, aperiam ea?</p>
+    <hr>
+    
+    <h1>Pula linha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Ea libero quos assumenda dolorem est distinctio praesentium qui explicabo expedita dicta facilis, quod non soluta repellendus molestiae commodi consequatur? At, hic?</p>
+    <hr>
+    
+    <h1>Formatações</h1>
+    <p><i>Lorem ipsum</i> dolor sit amet, consectetur adipisicing elit. <em>Incidunt</em>, repudiandae eius! <ins>Dolorum corporis</ins> sit perferendis nobis provident, placeat, recusandae ad rerum architecto vero magnam ullam animi totam ipsa! <del>Voluptatibus</del>, accusantium?</p>
+    <p>Lorem ipsum dolor sit <sub>amet consectetur</sub> adipisicing elit. Voluptates, <sup>earum perferendis</sup> delectus soluta aut enim! Qui ipsam, <small>recusandae eius</small>, dolor a inventore rem id voluptatibus laboriosam <mark>dolores aperiam facere tempora!</mark></p>
+    <hr>
+    <h1>Citações</h1>
+    <p>A <abbr title="Organização Mundial de Saúde">OMS</abbr> foi fundada em 1948.</p>
+    <address>Rua do Exemplo, 123, Centro, RJ.</address>
+    <p>O filme <cite>Titanic</cite> afundou o barco.</p>
+    <p> O objetivo do WWF é: <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q></p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html"> For 60 years, WWF has worked to help people and nature thrive. </blockquote>
+    <bdo dir="rtl">Esta linha será escrita da direita para a esquerda </bdo>
+    <hr>
+
+    <!--Isso é um título principal-->
+    <h1>Comentários</h1>
+    
+    <!--Isso é apenas um parágrafo-->
+    <p>Testando Comentários</p>
+    <hr>
+
+    <h1>Links</h1>
+    Site do <a href="https://google.com" target="_blank">Google</a> <br>
+    <a href="https://www.w3schools.com/html/" title="Va para a seção HTML do W3Schools">Visite nosso tutorial de  HTML</a>
+    <hr>
+
+    <h1>Imagens</h1>
+    <img src="multimidia/fundopreto.png" alt="Fundo Preto" width="300">
+    <hr>
+
+    <h1>Tabelas</h1>
+
+    <table width="100%" border="1" style="text-align: center;" >
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Peso</th>
+            <th>Linguagem</th>
+        </tr>
+        <tr>
+            <td>Cristhian</td>
+            <td>20</td>
+            <td>60 kg</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>95 kg</td>
+            <td>Java Script</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Listas</h1>
+    <h2>Lista não Ordenada</h2>
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ol>
+    <hr>
+
+    <h1>Iframes</h1>
+    <iframe src="https://www.cursoemvideo.com" style="height:300px; width:100%;border:none;" title="Meu iframe"></iframe>
+    <hr>
+
+    <h1>Formulário</h1>
+    <form action="arquivo.php">
+        <!--Campo Texto-->
+        <label for="campo_nome">Nome:</label>
+        <input type="text" name="" id="campo_nome" placeholder="Digite seu nome aqui" required>
+        <br><br>
+
+        <!--Campo Senha-->
+        <label for="campo_senha">Senha: </label>
+        <input type="password" name="senha" id="campo_senha" placeholder="Digite sua senha" required>
+        <br><br>
+
+        <!--Campo Email-->
+        <label for="campo_email">Email:</label>
+        <input type="email" name="campo_email" id="campo_email" placeholder="Digite seu email" required>
+        <br><br>
+
+        <!--Campo Radio-->
+        <input type="radio" id="html" name="fav_language" value="HTML">   <label for="html">HTML</label><br>   
+        
+        <input type="radio" id="css" name="fav_language" value="CSS">   <label for="css">CSS</label><br>   
+        
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">   
+        <label for="javascript">JavaScript</label>  
+        <br><br>
+
+        <!--Campo Checkbox-->
+        <input type="checkbox" id="veiculo1" name="veiculo1" value="Bicicleta">   
+        <label for="veiculo1">Bicicleta</label><br>   
+        
+        <input type="checkbox" id="veiculo2" name="veiculo2" value="Carro">   
+        <label for="veiculo2">Carro</label><br>   
+        
+        <input type="checkbox" id="veiculo3" name="veiculo3" value="Moto">   
+        <label for="veiculo3">Moto</label>
+        <br><br>
+
+        <!--Campo Select-->  
+        <label for="carros">Escolha um carro:</label>   <select id="carros" name="carros">   
+            <option value="volvo">Volvo</option>   <option value="saab">Saab</option>   
+            <option value="fiat" selected>Fiat</option>   
+            <option value="audi">Audi</option>   
+        </select>
+        <br><br>
+
+        <!--Campo Textarea-->
+        <textarea name="mensagem" rows="5" cols="30" placeholder="Seu Texto aqui..."></textarea>   
+        <br><br>
+
+        <!--Campo Enviar-->
+        <input type="submit" value="Enviar">
+        <br><br>
+
+        <!--Campo button-->
+        <button type="button" onclick="alert('Olá, Mundo!')">Clique Aqui!</button>
+    
+    </form> 
+    <hr>
+
+    <h1>Audio</h1>
+    <audio controls autoplay muted>   
+        <source src="multimidia/soft-piano-100-bpm-121529.mp3" type="audio/mpeg"> Seu navegador não suporta o elemento de áudio. 
+    </audio>
+    <hr>
+
+    <h1>Video</h1>
+    <video width="320" height="240" controls autoplay muted controlsList="nodownload nofullscreen" disablepictureinpicture  >   
+        <source src="multimidia/vinyl_-_57307 (720p).mp4" type="video/mp4">   Seu navegador não 
+        suporta a tag de video.   
+        <source src="/">
+    </video>
+    <hr>
+
+    <h1>Div e HTML Semantico</h1>
+
+    <header class="topo">
+        <h1>Topo</h1>
+        <p>Aqui a parte do topo</p>
+    </header>
+    
+    <nav class="menu">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </nav>
+
+    <section class="coluna-50">
+        <article>
+            <h2>Coluna</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, minima ullam. Odit consequuntur accusamus perspiciatis nihil quas, similique qui ipsam aliquam quae obcaecati labore vero repudiandae, reprehenderit veniam ea velit.</p>
+        </article>
+    </section>
+
+    <section class="coluna-50">
+        <article>
+            <h2>Coluna</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At pariatur magni cumque, ullam illo provident aperiam porro atque natus adipisci reiciendis ipsa, eligendi nisi dignissimos quos, minima veniam odit voluptate!</p>
+        </article>
+    </section>
+
+    <footer>
+        rodapé
+    </footer>
+
+    <hr>
+</body>
+</html>
