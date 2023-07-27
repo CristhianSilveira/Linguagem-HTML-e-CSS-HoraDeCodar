@@ -1,0 +1,76 @@
+/* ESPECIFICIDADE*/
+#espID{
+    background-color: blue;
+}
+.espClass {
+    background-color: red;
+}
+h4 {
+    color: aqua;
+}
+h4 {
+    color: salmon !important;
+}
+h4{
+    color: blueviolet;
+}
+
+
+/* GRADIENTES */
+.padrao{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.grad-linear{
+    text-align: center;
+    display: inline;
+}
+#linear {    
+    background-image: linear-gradient(red,yellow,blue,green);
+}
+#right-linear {
+    background-image: linear-gradient(to right,red,yellow,blue,green);
+}
+#ang-linear {
+    background-image: linear-gradient(360deg,red,yellow,blue,green);
+}
+
+.grad-radial{
+    text-align: center;
+    display: inline;
+}
+#radial {
+    background-image: radial-gradient(red,yellow,blue,green);
+}
+#forma-radial {
+    background-image: radial-gradient(circle, red, yellow,blue, green);
+}
+#rep-radial {
+    background-image: repeating-radial-gradient(red, yellow 10%,blue, green 15%);
+}
+
+.grad-conico{
+    text-align: center;
+    display: inline;
+}
+#tres-conico {
+    background-image: conic-gradient(red, yellow,blue);
+}
+#cinco-conico{
+    background-image: conic-gradient(red, yellow,blue,green,pink);
+}
+#ang-conico{
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+#pizza-conico {
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}
+#rep-conico {
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); 
+    border-radius: 50%;
+}
+
+/* BOX SHADOW E TEXT SHADOW */

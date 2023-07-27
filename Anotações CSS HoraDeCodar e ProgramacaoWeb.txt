@@ -315,5 +315,70 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
         A propriedade overflow especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento for muito grande para caber na área especificada. A propriedade overflow tem os seguintes valores: visible [Padrão. O overflow não é cortado. O conteúdo renderiza fora da caixa do elemento]; hidden [O overflow é cortado e o restante do conteúdo ficará invisível]; scroll [O overflow é cortado e uma barra de rolagem é adicionada para ver o restante do conteúdo] e auto [Semelhante ao scroll, mas adiciona barras de rolagem somente quando necessário].   EX: div {overflow: auto;}
 
 15- Float:
-    15.1- Float: 
+    15.1- Introdução: 
         A propriedade float é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner. A propriedade float pode ter um dos seguintes valores: left [O elemento flutua à esquerda de seu contêiner], right [O elemento flutua à direita de seu contêiner], none [O elemento não flutua (será exibido apenas onde ocorre no texto). Isso é padrão], inherit [O elemento herda o valor float de seu pai].   EX:  img {float: right;} (O exemplo ao lado especifica que uma imagem deve flutuar à direita)
+
+    15.2- Clear: 
+        A propriedade clear especifica o que deve acontecer com o elemento próximo a um elemento flutuante. A propriedade  clear pode ter um dos seguintes valores: none [O elemento não é colocado abaixo dos elementos flutuantes esquerdo ou direito. Isso é padrão], left [O elemento é empurrado para baixo dos elementos flutuantes à esquerda], right [O elemento é empurrado abaixo dos elementos flutuantes à direita], both [O elemento é empurrado para baixo dos elementos flutuantes esquerdo e direito], inherit [O elemento herda o valor clear de seu pai].   EX:   img2 {clear: left;}
+
+16- Opacity:
+    16.1- Introdução: 
+        A propriedade opacity pode assumir um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente.   EX: img {opacity: 0.5;}
+
+17- Especificidade: 
+    17.1- Introdução:
+        Se houver duas ou mais regras CSS que apontam para o mesmo elemento, o seletor com o maior valor de especificidade "vencerá" e sua declaração de estilo será aplicada a esse elemento HTML. Existem quatro categorias que definem o nível de especificidade de um seletor: (1) Estilos embutidos - EX: <h1 style="color: pink;">, (2) IDs - EX: #navbar, (3) Classes, pseudo-classes, seletores de atributo - EX: .test, :hover, [href] e (4) Elementos e pseudo-elementos - EX: h1, ::before
+
+18- Gradientes:
+    18.1- Introdução: 
+        Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas.
+        
+    18.2- Gradientes Lineares: 
+        Para criar um gradiente linear, você deve definir pelo menos duas paradas de cor. Interrupções de cores são as cores entre as quais você deseja renderizar transições suaves. Você também pode definir um ponto inicial e uma direção (ou um ângulo) junto com o efeito de gradiente.
+                
+        18.2.1- Direção - De cima para baixo (este é o padrão):
+           EX: #grad {background-image: linear-gradient(red, yellow);}  Explicando: [O exemplo anterior mostra um gradiente linear que começa no topo. Começa com vermelho, passando para amarelo]
+
+        18.2.2- Direção - Esquerda para Direita:
+            EX: #grad {background-image: linear-gradient(to right, red , yellow);}  Explicando: [O exemplo anterior mostra um gradiente linear que começa da esquerda. Começa vermelho, passando para amarelo]
+
+        18.2.3- Usando Ângulos: 
+            Se quiser mais controle sobre a direção do gradiente, você pode definir um ângulo, em vez das direções predefinidas (para baixo, para cima, para a direita, para a esquerda, para baixo à direita, etc.). Um valor de 0deg é equivalente a "to top". Um valor de 90 graus é equivalente a "para a direita". Um valor de 180 graus é equivalente a "to bottom".   EX: #grad {background-image: linear-gradient(180deg, red, yellow);}  Explicando: [O exemplo anterior mostra como usar ângulos em gradientes lineares]
+
+        18.2.4- Usando várias paradas de cores:
+           EX: #grad {background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);}  Explicando: [O exemplo anterior mostra como criar um gradiente linear (da esquerda para a direita) com a cor do arco-íris]
+
+        18.1.5- Repetindo um gradiente linear: 
+            A função repeating-linear-gradient() é usada para repetir gradientes lineares:   EX: #grad {background-image: repeating-linear-gradient(red, yellow 10%, green 20%);}
+
+    18.3- Gradientes Radiais: 
+        Um gradiente radial é definido por seu centro. Para criar um gradiente radial, você também deve definir pelo menos duas paradas de cor.
+                
+        18.3.1- Radial Gradient - Paradas de cor uniformemente espaçadas (este é o padrão):
+           EX: #grad {background-image: radial-gradient(red, yellow, green);}  Explicando: [O exemplo anterior mostra um gradiente radial com limites de cores uniformemente espaçados]
+
+        18.3.2- Definir forma: 
+            O parâmetro de forma define a forma. Pode levar o valor círculo ou elipse. O valor padrão é elipse.   EX: #grad {background-image: radial-gradient(circle, red, yellow, green);}  Explicando: [O exemplo anterior mostra um gradiente radial com a forma de um círculo]
+
+        18.3.3- Repetindo um gradiente radial: 
+            A função repeating-radial-gradient() é usada para repetir gradientes radiais:   EX: #grad {background-image: repeating-radial-gradient(red, yellow 10%, green 15%);}
+
+    18.4- Gradientes Cônicos: 
+        Um gradiente cônico é um gradiente com transições de cores giradas em torno de um ponto central. Para criar um gradiente cônico, você deve definir pelo menos duas cores.
+                
+        18.4.1- Gradiente Cônico: Três Cores:   
+            EX: #grad {background-image: conic-gradient(red, yellow, green);}  Explicando: [O exemplo anterior mostra um gradiente cônico com três cores]
+
+        18.4.2- Gradiente Cônico: Cinco Cores: 
+            EX: #grad {conic-gradient(red, yellow, green, blue, black);}  Explicando: [O exemplo anterior mostra um gradiente cônico com cinco cores]
+
+        18.4.3- Gradiente Cônico: Três Cores e Graus:
+           EX: #grad {background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);}  Explicando: [O exemplo anterior mostra um gradiente cônico com três cores e um grau para cada cor]
+
+        18.4.4- Criar Gráficos de Pizza: 
+            Basta adicionar border-radius: 50% para fazer o gradiente cônico parecer uma torta:   EX: #grad {conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);}
+
+        18.4.5- Repetindo um gradiente cônico: 
+            A função repeating-conic-gradient() é usada para repetir gradientes cônicos:   EX: #grad {background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); border-radius: 50%;}
+
+19- Box Shadow:
