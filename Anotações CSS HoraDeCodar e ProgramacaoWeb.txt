@@ -381,4 +381,4 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
         18.4.5- Repetindo um gradiente cônico: 
             A função repeating-conic-gradient() é usada para repetir gradientes cônicos:   EX: #grad {background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); border-radius: 50%;}
 
-19- Box Shadow:
+19- Box Shadow e TextShadow:
