@@ -1,0 +1,91 @@
+
+.enorme{
+    height: 300px;
+}
+.flex-container{
+    width: 300px;
+    background-color: blue;
+    display: flex;  
+}
+.flex-container div {
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* FLEX DIRECTION */
+#flex-column{
+    flex-direction: column;
+}
+#flex-row{
+    flex-direction: row;
+}
+
+
+/* FLEX-WRAP */
+#flex-wrap{
+    flex-wrap: wrap;
+    
+    flex-flow: row wrap; /*Shorthand de Flex Direction e Flex Wrap */
+}
+#flex-nowrap {
+    flex-wrap: nowrap;
+
+    flex-flow: row nowrap; /*Shorthand de Flex Direction e Flex Wrap */
+}
+
+
+/* JUSTIFY CONTENT*/
+#justify-inicio{
+    justify-content: flex-start;
+}
+#justify-centro{
+    justify-content: center;
+}
+#justify-fim{
+    justify-content: flex-end;
+}
+#justify-between{
+    justify-content: space-between;
+}
+#justify-around{
+    justify-content: space-around;
+}
+
+
+/* ALIGN ITEMS */
+#align-inicio{
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+}
+#align-centro{
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+#align-fim{
+    flex-wrap: wrap;
+
+    align-items: flex-end;
+}
+
+
+/* ALIGN CONTENT*/
+#align-content-inicio{
+    flex-wrap: wrap;
+    
+    align-content: flex-start;
+}
+#align-content-centro{
+    flex-wrap: wrap;
+    
+    align-content: center;
+}
+#align-content-fim{
+    flex-wrap: wrap;
+    
+    align-content: flex-end;
+}

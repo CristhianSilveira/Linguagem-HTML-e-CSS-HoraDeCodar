@@ -403,3 +403,89 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
 
     20.2- Quebra de palavras: 
         A propriedade word-wrap permite que palavras longas possam ser quebradas e agrupadas na próxima linha.   EX: p {word-wrap: break-word;}
+
+21- Media Query:
+    21.1- Introdução: 
+        As media queries podem ser usadas para verificar muitas coisas, como: largura e altura da viewport, largura e altura do dispositivo, orientação (o tablet/telefone está no modo paisagem ou retrato?) e resolução. O uso de media queries é uma técnica popular para fornecer uma folha de estilo personalizada para desktops, laptops, tablets e telefones celulares (como iPhone e telefones Android).
+
+    21.2- Sintaxe de Media Queries: 
+        Uma média queries consiste em um tipo de mídia e pode conter uma ou mais expressões, que são resolvidas como verdadeiras ou falsas. O resultado da consulta é verdadeiro se o tipo de mídia especificado corresponder ao tipo de dispositivo no qual o documento está sendo exibido e todas as expressões na consulta de mídia forem verdadeiras. Quando uma consulta de mídia é verdadeira, a folha de estilo ou as regras de estilo correspondentes são aplicadas, seguindo as regras normais em cascata.   <link rel="stylesheet" media="mediatype and (expressions)" href="print.css">
+
+    21.3- Tipos de Mídia: 
+        all [Usado para todos os dispositivos de tipo de mídia], print	[Usado para impressoras], screen [Usado para telas de computador, tablets, smartphones etc.] e speech [Usado para leitores de tela que "lê" a página em voz alta]
+
+    21.4- Orientação: 
+        Retrato/Paisagem: As consultas de mídia também podem ser usadas para alterar o layout de uma página, dependendo da orientação do navegador.   EX: @media only screen and (orientation: landscape) {body {background-color: lightblue;} }  Explicando: [A página da web terá um fundo azul claro se a orientação estiver no modo paisagem]
+
+    21.5- Orientações dos Dispositivos:
+        21.5.1- Smartphones (600px para baixo):
+            @media only screen and (max-width: 600px) {...}
+
+        21.5.2- Pequenos Tablets e Smartphones largos (600px para cima):
+            Dispositivos um pouco maiores, mas ainda pequenos.  @media only screen and (min-width: 600px) {...}
+
+        21.5.3- Dispositivos Médios e Tablets deitados (768px para cima):
+                @media only screen and (min-width: 768px) {...}
+
+        21.5.4- Dispositivos Largos e laptops/desktops (992px para cima):
+            @media only screen and (min-width: 992px) {...}
+
+        21.5.5- Super Largos, Telas maiores, laptops, desktops e até TVs (1200px para cima):
+            @media only screen and (min-width: 1200px) {...}
+
+    21.6- Exemplo Completo: 
+        body {background-color: pink;}   @media screen and (min-width: 480px) {body { background-color: lightgreen;}}  Explicando: [O exemplo anterior altera a cor de fundo para verde claro se a viewport tiver 480 pixels de largura ou mais (se a viewport tiver menos de 480 pixels, a cor de fundo será rosa)]
+
+22- Flexbox:
+    22.1- Contêiner flexível: 
+        22.1.1- Introdução:
+            O flex container torna-se flexível definindo a propriedade display como flex.   EX: .flex-container {display: flex;} As propriedades do flex container são: flex-direction, flex-wrap, flex-flow, justify-content, align-items e align-content.
+                
+        22.1.2- A propriedade flex-direction: 
+            A propriedade flex-direction define em qual direção o contêiner deseja empilhar os itens flexíveis. Valores: column [empilha os itens flexíveis verticalmente (de cima para baixo)]; column-reverse [empilha os itens flexíveis verticalmente (mas de baixo para cima)]; row [empilha os itens flexíveis horizontalmente (da esquerda para a direita)] e row-reverse [empilha os flex items horizontalmente (mas da direita para a esquerda)].   EX: .flex-container {display: flex; flex-direction: row;}
+
+        22.1.3- A propriedade flex-wrap: 
+            A propriedade flex-wrap especifica se os itens flexíveis devem ser encapsulados ou não.   EX: .flex-container {display: flex; flex-wrap: wrap;}
+
+        22.1.4- A propriedade de flex-flow: 
+            A propriedade flex-flow é uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap.   EX: .flex-container {display: flex; flex-flow: row wrap;}
+
+        22.1.5- A propriedade de conteúdo justificado: 
+            A propriedade justify-content é usada para alinhar os itens flexíveis na posição horizontal(esquerda direita):   EX: .flex-container {display: flex; justify-content: Between;}
+
+        22.1.6- A propriedade align-items: 
+            A propriedade align-items é usada para alinhar os itens em uma posição flexível na posição vertical(cima baixo).   EX: .flex-container {display: flex; align-items: center;}
+
+        22.1.7- A propriedade align-content: 
+            A propriedade align-content é usada para alinhar as linhas flexíveis.   EX: .flex-container {display: flex; flex-wrap: wrap; align-content: flex-start;}
+
+    22.2- Centralização Perfeita:   
+        EX: .flex-container {display: flex; height: 300px; justify-content: center; align-items: center;}
+
+    
+    
+    
+    
+    
+    22.9- Itens flexíveis: 
+        As propriedades do item flexível são: order, flex-grow, flex-shrink, flex-basis, flex e align-self
+
+        22.9.1- A propriedade order: 
+            A propriedade order especifica a ordem dos itens flexíveis.   EX: <div class="flex-container">   <div style="order: 3">1</div>   <div style="order: 2">2</div>   <div style="order: 4">3</div>   <div style="order: 1">4</div>   </div>
+
+        22.9.2- A propriedade de crescimento flexível: 
+            A propriedade flex-grow especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis.   EX: <div class="flex-container">   <div style="flex-grow: 1">1</div>   <div style="flex-grow: 1">2</div>   <div style="flex-grow: 8">3</div>   </div>  Explicando: [o terceiro item flexível cresce oito vezes mais rápido que os outros itens flexíveis]
+
+        22.9.3- A propriedade flex-shrink: 
+            A propriedade flex-shrink especifica quanto um item flexível encolherá em relação ao restante dos itens flexíveis.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex-shrink: 0">3</div>   <div>4</div>   <div>5</div>   </div>
+
+        22.9.4- A propriedade de base flexível: 
+            A propriedade flex-basis especifica o comprimento inicial de um item flexível.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex-basis: 200px">3</div>   <div>4</div>   </div>
+
+                25.2.5- A propriedade align-self: A propriedade align-self especifica o alinhamento do item selecionado dentro do contêiner flexível. A propriedade align-self substitui o alinhamento padrão definido pela propriedade align-items do contêiner.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="align-self: center">3</div>   <div>4</div>   </div>
+
+                25.2.6- A propriedade flexível: A propriedade flex é uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex: 0 0 200px">3</div>   <div>4</div>   </div>
+
+        25.3- Flex responsivo:
+                25.3.1- Caixa flexível responsiva:   EX: @media (max-width: 800px) {.flex-container {flex-direction: column;}  }  Explicando: [é exibido uma coluna para tamanhos de tela pequenos (como telefones e tablets)]
+

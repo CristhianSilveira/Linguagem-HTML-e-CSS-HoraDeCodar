@@ -1,0 +1,141 @@
+a {
+    color: black;
+}
+#linkpos{
+    float: right;
+}
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: blue;
+    }    
+    #pequeno{
+    display: block;
+    }
+
+    #tablets{
+    display: none;        
+    }
+
+    #medios{
+    display: none;
+    }
+
+    #largos{
+    display: none;
+    }
+
+    #super-largos{
+    display: none;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: green;
+    }
+    #pequeno{
+        display: none;
+    }
+    
+    #tablets{
+        display: block;        
+    }
+    
+    #medios{
+        display: none;
+    }
+    
+    #largos{
+        display: none;
+    }
+    
+    #super-largos{
+        display: none;
+    }
+}
+
+
+
+/* Dispositivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+    #pequeno{
+        display: none;
+    }
+    
+    #tablets{
+        display: none;        
+    }
+    
+    #medios{
+        display: block;
+    }
+    
+    #largos{
+        display: none;
+    }
+    
+    #super-largos{
+        display: none;
+    }
+}
+
+
+
+/* Dispositivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: red;
+    }
+    #pequeno{
+        display: none;
+    }
+    
+    #tablets{
+        display: none;        
+    }
+    
+    #medios{
+        display: none;
+    }
+    
+    #largos{
+        display: block;
+    }
+    
+    #super-largos{
+        display: none;
+    }
+}
+
+
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: violet;
+    }
+    #pequeno{
+        display: none;
+    }
+    
+    #tablets{
+        display: none;        
+    }
+    
+    #medios{
+        display: none;
+    }
+    
+    #largos{
+        display: none;
+    }
+    
+    #super-largos{
+        display: block;
+    }
+}

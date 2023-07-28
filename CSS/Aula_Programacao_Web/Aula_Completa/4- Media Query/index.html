@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendendo CSS 4</title>
-</head>
-<body>
-    <a href="../3- Gradientes_e_Efeitos/index.html">Voltar ao Gradiente e Efeitos </a>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="../3- Gradientes_e_Efeitos/index.html"> Voltar para Gradiente e Efeitos</a>
+    <a id="linkpos" href="../5- Flexbox/index.html">Ir para Flexbox</a>
 
     <h1>Media Query:</h1>
-</body>
+    <h3>Isso muda o jogo!</h3>
+    <p><strong>Propriedade que controla o que acontece quando temos diferentes resoluções de tela.</strong> Para ver o efeito vamos redimensionar nossa tela. Viu só? Isso é o que acontece quando nós redimencionamos a nossa página usando a propriedade CSS das Medias Queries!</p>
+
+    <div id="pequeno">
+        <h2>Smartphones (600px para baixo)</h2>
+        
+        <p>O padrão para esse tipo é: <strong>@media only screen and (max-width: 600px) {...}</strong></p>
+    </div>
+
+    <div id="tablets">
+        <h2>Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima)</h2>
+        
+        <p>O padrão para esse tipo é: <strong>@media only screen and (min-width: 600px) {...}</strong></p>
+    </div>
+
+    <div id="medios">
+        <h2>Dispostivos Médios (Tablets deitados, 768px para cima)</h2>
+        
+        <p> O padrão para esse tipo é: <strong>@media only screen and (min-width: 768px) {...}</strong></p>
+    </div>
+
+    <div id="largos">
+        <h2> Dispostivos Largos (laptops/desktops, 992px para cima)</h2>
+        
+        <p> O padrão para esse tipo é: <strong> @media only screen and (min-width: 992px) {...}</strong></p>
+    </div>
+
+    <div id="super-largos">
+        <h2> Super Largos (Telas maiores laptops, desktops e até TVs,
+            1200px para cima)</h2>
+        
+        <p>O padrão para esse tipo é: <strong>@media only screen and (min-width: 1200px) {...}</strong></p>
+    </div>
+  </body>
 </html>
