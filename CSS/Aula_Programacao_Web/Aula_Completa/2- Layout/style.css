@@ -61,16 +61,14 @@
 
 .position .azul{
     position: relative;
-    left: 350px;
+    left: 400px;
 
-    z-index: 3;
+    z-index: 1;
 }
 
 .position .amarelo{
     position: sticky;
     top: 0;
-
-    z-index: 1;
 }
 
 .position .vermelho{
@@ -85,7 +83,6 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
-
 }
 
 

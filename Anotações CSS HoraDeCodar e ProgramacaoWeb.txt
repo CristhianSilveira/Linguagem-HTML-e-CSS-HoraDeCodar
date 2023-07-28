@@ -382,3 +382,24 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
             A função repeating-conic-gradient() é usada para repetir gradientes cônicos:   EX: #grad {background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg); border-radius: 50%;}
 
 19- Box Shadow e TextShadow:
+    19.1- Sombra de Texto CSS: 
+        A propriedade text-shadow adiciona sombra ao texto. Em seu uso mais simples, você especifica apenas a sombra horizontal e a sombra vertical. Em seguida, adicione um efeito de desfoque à sombra. e por último, adicione uma cor à sombra.   EX:   text-shadow: 2px 2px 5px red;  Sintaxe: text-shadow(Sombra Horizontal, Sombra Vertical, Desfoque e cor)
+
+    19.2- Múltiplas Sombras: 
+        Para adicionar mais de uma sombra ao texto, você pode adicionar uma lista de sombras separadas por vírgula.   EX: h1 {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}  Explicando: [O exemplo anterior mostra uma sombra de brilho neon vermelho e azul]
+
+    19.3- Sombra da Caixa: 
+        A propriedade CSS box-shadow é usada para aplicar uma ou mais sombras a um elemento. Em seu uso mais simples, você especifica a sombra horizontal, a sombra vertical, efeito de desfoque à sombra, adicione o raio de propagação da sombra, adicione uma cor à sombra e por último, defina o parâmetro de inserção.   EX: div {box-shadow: 10px 10px 5px lightblue inset;}  Sintaxe: box-shadow(Sombra Horizontal, Sombra Vertical, Desfoque, raio, cor e inserção)
+                
+        19.3.1- Adicionar várias sombras: 
+            div {box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;}
+
+        19.3.2- Cartões: 
+            Você também pode usar a propriedade box-shadow para criar cartões semelhantes a papel:   EX: div.card {width: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center;}
+
+20- Efeitos de Texto:
+    20.1- Estouro de texto: 
+        A propriedade text-overflow especifica como o conteúdo transbordado que não é exibido deve ser sinalizado para o usuário.   EX:   text-overflow: ellipsis;
+
+    20.2- Quebra de palavras: 
+        A propriedade word-wrap permite que palavras longas possam ser quebradas e agrupadas na próxima linha.   EX: p {word-wrap: break-word;}
