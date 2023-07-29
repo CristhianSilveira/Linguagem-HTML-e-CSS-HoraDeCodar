@@ -460,32 +460,29 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
             A propriedade align-content é usada para alinhar as linhas flexíveis.   EX: .flex-container {display: flex; flex-wrap: wrap; align-content: flex-start;}
 
     22.2- Centralização Perfeita:   
-        EX: .flex-container {display: flex; height: 300px; justify-content: center; align-items: center;}
+        EX: .flex-container {display: flex; height: 300px; justify-content: center; align-items: center;} 
+    
+    22.3- Itens flexíveis: 
+        22.3.1- Introdução:
+            As propriedades do item flexível são: order, flex-grow, flex-shrink, flex-basis, flex e align-self
 
-    
-    
-    
-    
-    
-    22.9- Itens flexíveis: 
-        As propriedades do item flexível são: order, flex-grow, flex-shrink, flex-basis, flex e align-self
-
-        22.9.1- A propriedade order: 
+        22.3.2- A propriedade order: 
             A propriedade order especifica a ordem dos itens flexíveis.   EX: <div class="flex-container">   <div style="order: 3">1</div>   <div style="order: 2">2</div>   <div style="order: 4">3</div>   <div style="order: 1">4</div>   </div>
 
-        22.9.2- A propriedade de crescimento flexível: 
+        22.3.3- A propriedade de flex-grow: 
             A propriedade flex-grow especifica quanto um item flexível crescerá em relação ao restante dos itens flexíveis.   EX: <div class="flex-container">   <div style="flex-grow: 1">1</div>   <div style="flex-grow: 1">2</div>   <div style="flex-grow: 8">3</div>   </div>  Explicando: [o terceiro item flexível cresce oito vezes mais rápido que os outros itens flexíveis]
 
-        22.9.3- A propriedade flex-shrink: 
+        22.3.4- A propriedade flex-shrink: 
             A propriedade flex-shrink especifica quanto um item flexível encolherá em relação ao restante dos itens flexíveis.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex-shrink: 0">3</div>   <div>4</div>   <div>5</div>   </div>
 
-        22.9.4- A propriedade de base flexível: 
+        22.3.5- A propriedade de base flexível: 
             A propriedade flex-basis especifica o comprimento inicial de um item flexível.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex-basis: 200px">3</div>   <div>4</div>   </div>
 
-                25.2.5- A propriedade align-self: A propriedade align-self especifica o alinhamento do item selecionado dentro do contêiner flexível. A propriedade align-self substitui o alinhamento padrão definido pela propriedade align-items do contêiner.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="align-self: center">3</div>   <div>4</div>   </div>
+        22.3.6- A propriedade align-self: 
+            A propriedade align-self especifica o alinhamento do item selecionado dentro do contêiner flexível. A propriedade align-self substitui o alinhamento padrão definido pela propriedade align-items do contêiner.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="align-self: center">3</div>   <div>4</div>   </div>
 
-                25.2.6- A propriedade flexível: A propriedade flex é uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex: 0 0 200px">3</div>   <div>4</div>   </div>
+        22.3.7- A propriedade flexível: 
+            A propriedade flex é uma propriedade abreviada para as propriedades flex-grow, flex-shrink e flex-basis.   EX: <div class="flex-container">   <div>1</div>   <div>2</div>   <div style="flex: 0 0 200px">3</div>   <div>4</div>   </div>
 
-        25.3- Flex responsivo:
+    25.4- Flex responsivo:
                 25.3.1- Caixa flexível responsiva:   EX: @media (max-width: 800px) {.flex-container {flex-direction: column;}  }  Explicando: [é exibido uma coluna para tamanhos de tela pequenos (como telefones e tablets)]
-

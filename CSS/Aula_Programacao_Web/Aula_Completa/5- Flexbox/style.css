@@ -1,4 +1,6 @@
-
+#linkpos {
+    float: right;
+}
 .enorme{
     height: 300px;
 }

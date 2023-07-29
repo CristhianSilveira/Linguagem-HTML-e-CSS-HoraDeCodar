@@ -1,0 +1,77 @@
+
+.flex-container{
+    width: 300px;
+    background-color: blue;
+    display: flex; 
+    flex-flow: row wrap;
+}
+.coluna{
+    flex-direction: column;
+}
+.responsivo{
+    width: 100%;
+}
+.flex-container div {
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* FLEX GROW */
+#flex-grow1{
+    flex-grow: 10;
+}
+#flex-grow2{
+    flex-grow: 1;
+}
+#flex-grow3{
+    flex-grow: 300;
+}
+#flex-grow4{
+    flex-grow: 20;
+}
+#flex-grow5{
+    flex-grow: 100;
+}
+#flex-grow6{
+    flex-grow: 60;
+}
+
+
+/* ORDER*/
+#order1 {
+    order: 2;
+}
+#order2 {
+    order: 3;
+}
+#order3 {
+    order: 1;
+}
+
+
+/* FLEX-BASIS */
+#flex-base1{
+    flex-basis: 20px;
+}
+#flex-base2 {
+    flex-basis: 300px;
+}
+#flex-base3 {
+    flex-basis: 100px;
+}
+
+
+/* ALIGN-SELF */
+#align-self1{
+    align-self: flex-end;
+}
+#align-self2 {
+    align-self: center;
+}
+#align-self3 {
+    align-self: flex-start;   
+}
+
