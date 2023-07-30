@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS 1</title>
+    <!-- <style>
+        body{
+            padding: 20px;
+        }
+
+        p{
+            color: green;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="" id="linkpos">Ir para a aula de Position</a>
+    
+    <h2>Inserir CSS:</h2>
+    <p style="color: red;">Parágrafo Inline</p>
+    <p>Parágrafo Interno</p>
+    <p>Parágrafo Externo</p>
+
+    <h2>Classes e Ids:</h2>
+    <h3 id="titulo-principal">Título de página</h3>
+    <p class="meu-paragrafo">Parágrafo de página 1</p>
+    <p class="meu-paragrafo">Parágrafo de página 2</p>
+    <p class="meu-paragrafo">Parágrafo de página 3</p>
+
+    <h2>Cores:</h2>
+    <p id="nome-da-cor">Rosa</p>
+    <p id="hexa">Hexadecimal</p>
+    <p id="rgb">RGB</p>
+
+    <h2>Fontes:</h2>
+    <p class="serifada">Fonte Serifada</p>
+    <p class="sem-serifa">Sem Serifa</p>
+    <p class="mono-espaçada">Mono espaçada</p>
+
+    <h2>Texto:</h2>
+    <!-- Size e Weight -->
+    <p class="tamanho-fonte-grande">Esta fonte está grande</p>
+    <p class="tamanho-fonte-pequena">Esta fonte está pequena</p>
+    <p class="peso-fonte">Esta em negrito</p>
+    <!-- Propriedade de texto -->
+    <p class="texto-italico">Esta em italico</p>
+    <p class="alinhamento">Texto ao centro</p>
+    <p class="transform-maiuscula">texto todo em maiúscula</p>
+    <p class="transform-minuscula">TEXTO TODO EM MINUSCULA</p>
+    <!-- Espaçamentos de linhas e letras -->
+    <p class="espaçamento-texto">Texto com espaçamento entre linhas e letras</p>
+    <p class="espaçamento-texto">Texto com espaçamento entre linhas e letras</p>
+
+    <h2>Box Model:</h2>
+    <p class="box-model">Este é o box model!</p>
+
+    <h2>Links:</h2>
+    <div>
+        <a href="@" class="decoration">Meu link 1</a>
+    </div>
+    <div>
+        <a href="https://www.google.com" class="visitado">Meu link 2</a>
+    </div>
+    <div>
+        <a href="@" class="estilo-hover">Meu link 3</a>
+    </div>
+    <div>
+        <a href="@" class="btn">Clique em mim</a>
+    </div>
+
+    <h2>Listas:</h2>
+    <ul class="sem-estilo">
+        <li>Lista</li>
+        <li>Sem</li>
+        <li>Bullets</li>
+    </ul>
+
+    <h2>Display:</h2>
+    <!--Div é bloco, Span é inline-->
+    <div class="inline"></div>
+    <div class="inline"></div>
+    <span class="bloco">Teste</span>
+    <span class="bloco">Teste 2</span>
+
+    <h2>Pseudo Seletor:</h2>
+    <div class="primeiro-elemento">
+        <p>Este terá estilo</p>
+        <p>Este não</p>
+        <p>Este não</p>
+        <p>Este não</p>
+    </div>
+    <p class="primeira-letra">Esta frase começa com uma letra diferente!</p>
+
+    <h2>Especificidade</h2>
+    <h4>Meu titulo</h4>
+    <h4 class="titulo">Meu titulo</h4>
+    <h4 class="titulo" id="meu-titulo-preferido">Meu titulo</h4>
+</body>
+</html>

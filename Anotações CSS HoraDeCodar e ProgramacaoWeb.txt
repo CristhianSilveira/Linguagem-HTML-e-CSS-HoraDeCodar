@@ -2,6 +2,9 @@
 
 Canal: Programação Web: CSS em 7 horas.
 Canal: Hora De Codar: CSS em 2 horas - 2021.
+Canal: Hora De Codar: Position em 25 minutos - 2021.
+Canal: Hora De Codar: Flexbox 20 minutos - 2021.
+Canal: Hora De Codar: Grid 30 minutos - 2021.
 Canal: Hora De Codar: Media Query 30 minutos - 2021.
 
 

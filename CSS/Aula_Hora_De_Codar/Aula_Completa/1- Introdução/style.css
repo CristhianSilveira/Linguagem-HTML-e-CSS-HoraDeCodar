@@ -1,0 +1,188 @@
+#linkpos{
+    float: right;
+}
+
+body{
+    padding: 20px;
+    padding-bottom: 500px;
+}
+
+p{
+    color: green;
+    font-size: 30px;
+}
+
+
+
+/* CLASSES E IDS */
+#titulo-principal{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-family: Helvetica;
+}
+.meu-paragrafo{
+    background-color: black;
+    color: red;
+}
+
+
+
+/* SELETOR UNIVERSAL (*) E AGRUPAMENTO */
+* {
+    font-family: Arial;
+}
+
+p, h3 {
+    border-bottom: 1px solid blue;
+}
+
+
+
+/* CORES */
+#nome-da-cor{
+    color: pink;
+}
+#hexa {
+    color: #5f6fb6;
+    background-color: #333333;
+}
+#rgb {
+    color: rgb(192, 182, 78);
+}
+
+
+
+/* FONTES */
+.serifada{
+    font-family: Georgia;
+}
+.sem-serifa{
+    font-family: Helvetica;
+}
+.mono-espaçada{
+    font-family: 'Courier new';
+}
+
+
+
+/* TEXTO */
+.tamanho-fonte-grande{
+    font-size: 64px;
+}
+.tamanho-fonte-pequena{
+    font-size: 12px;
+}
+.peso-fonte{
+    color: black;
+    font-weight: 700;
+}
+.texto-italico{
+    font-style: italic;
+}
+.alinhamento{
+    text-align: center;
+
+}
+.transform-maiuscula{
+    text-transform: uppercase;
+}
+.transform-minuscula{
+    text-transform: lowercase;
+}
+.espaçamento-texto{
+    width: 150px;
+    line-height: 40px;
+    letter-spacing: 8px;
+}
+
+
+
+/* BOX MODEL */
+.box-model{
+    width: 200px;
+    height: 100px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+/* LINKS */
+.decoration{
+    text-decoration: none;
+}
+.visitado:visited{
+    color: orange;
+}
+.estilo-hover:hover{
+    background-color: #1292ae;
+}
+.btn {
+    background-color: #34ae43;
+    border: 3px solid #234966;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    padding: 12px 7px;
+    text-align: center;
+    margin: 20px;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #234966;
+}
+
+
+
+/* LISTA */
+.sem-estilo{
+    list-style: none;
+}
+
+
+
+/* DISPLAY */
+.inline{
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    margin: 5px;
+    display: inline-block;
+}
+.bloco{
+    display: block;
+}
+
+
+
+/* PSEUDO SELETOR */
+
+/* Pseudo Class*/
+.primeiro-elemento p:first-child{
+    color: purple;
+    font-weight: bold;
+}
+/* Pseudo Elemento */
+.primeira-letra::first-letter{
+    font-size: 40px;
+    color: blue;
+    background-color: red;
+    padding: 4px;
+}
+
+
+
+/* ESPECIFICIDADE */
+h4 {
+    color: red;
+}
+.titulo {
+    color: gray;
+}
+#meu-titulo-preferido{
+    color: blue;
+}
