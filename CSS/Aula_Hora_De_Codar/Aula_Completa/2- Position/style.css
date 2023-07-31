@@ -1,0 +1,63 @@
+#linkpos {
+    float: right;
+}
+
+.static {
+    height: 50px;
+    background-color: #ccc;
+    border: 1px solid #222;
+    padding: 10px;
+
+    position: static;
+}
+
+.relative {
+    height: 50px;
+    background-color: #321;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 10px;
+    
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute {
+    height: 25px;
+    width: 200px;
+    background-color: #914;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 10px;
+       
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+.fixed {
+    height: 50px;
+    width: 50px;
+    background-color: #528;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 10px;
+       
+    position: fixed;
+    top: 10px;
+    left: 100px;
+}
+
+.sticky{
+    height: 50px;
+    width: 200px;
+    background-color: #881;
+    
+    position: sticky;
+    top: 10px;
+}
+
+html {
+    padding-bottom: 1000px;
+}
