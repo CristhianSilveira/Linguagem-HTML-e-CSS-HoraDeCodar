@@ -8,26 +8,51 @@
 </head>
 <body>
     <a href="../3- Flexbox/index.html">Voltar para Flexbox 1</a>
-    <a href="" id="linkpos">Ir para Grid</a>
+    <a href="../5- Grid/index.html" id="linkpos">Ir para Grid</a>
 
     <h1>Flexbox 2:</h1>
     <h2>Flexbox do Container Filho:</h2>
-    <p></p>
+    <p>Order, Flex-Grow, Flex-Shrink, Flex-Basis, Flex e Align-Self</p>
 
-    <h2>Flex-:</h2>
-    <p>Qual</p>
-    <h3>Row:</h3>
-    <div class="container" id="direction-row">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+    <h2>Order: Ordem dos itens flexíveis.</h2>
+    <div class="container">
+        <div class="box grande" id="order1">1</div>
+        <div class="box grande" id="order2">2</div>
+        <div class="box grande" id="order3">3</div>
     </div>
-    <h3>Column:</h3>
-    <div class="container" id="direction-column">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+
+    <h2>Flex-Glow: Aumento do item flexível em relação ao restante dos itens flexíveis.</h2>
+    <p>Só funciona quando redimensionamos a tela</p>
+    <div class="container responsivo">
+        <div class="box" id="flex-grow1">1</div>
+        <div class="box" id="flex-grow2">2</div>
+        <div class="box" id="flex-grow3">3</div>
     </div>
- 
+
+    <h2>Flex-Shrink: Diminuição do item flexível em relação ao restante dos itens flexíveis.</h2>
+    <p>Só funciona quando redimensionamos a tela</p>
+    <div class="container responsivo">
+        <div class="box grande" id="flex-shrink1">1</div>
+        <div class="box grande" id="flex-shrink2">2</div>
+        <div class="box grande" id="flex-shrink3">3</div>
+    </div>
+
+    <h2>Flex-Basis: Comprimento inicial de um item flexível.</h2>
+    <div class="container">
+        <div class="box" id="flex-base1">1</div>
+        <div class="box" id="flex-base2">2</div>
+        <div class="box" id="flex-base3">3</div>
+    </div>
+
+    <h2>Align-Self: Alinhamento do item selecionado dentro do contêiner flexível.</h2>
+    <div class="container">
+        <div class="box grande" id="align1">1</div>
+        <div class="box grande" id="align2">2</div>
+        <div class="box grande" id="align3">3</div>
+    </div>
+
+    <h2>Flex:</h2>
+    <p>Shorthand para: Flex-Grow e Flex-Shrink e Flex-Basis</p>
+
 </body>
 </html>
