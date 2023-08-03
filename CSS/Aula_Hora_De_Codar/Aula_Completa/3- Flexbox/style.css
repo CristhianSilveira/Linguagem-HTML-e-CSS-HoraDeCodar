@@ -1,0 +1,99 @@
+#linkpos {
+    float: right;
+}
+h2{
+    background-color: yellow;
+    margin-top: 50px;
+}
+p{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.container {
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 150px;
+
+    display: flex;
+}
+.item {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* FLEX-DIRECTION */
+#direction-row{
+    flex-direction: row;
+}
+#direction-column{
+    flex-direction: column;
+}
+
+
+/* JUSTIFY-CONTENT */
+#justify-inicio{
+    justify-content: flex-start;
+}
+#justify-centro{
+    justify-content: center;
+}
+#justify-fim{
+    justify-content: flex-end;
+}
+#justify-between{
+    justify-content: space-between;
+}
+#justify-around{
+    justify-content: space-around;
+}
+
+
+/* FLEX- WRAP */
+#flex-wrap{
+    flex-wrap: wrap;
+}
+#flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+
+/* ALIGN-ITENS */
+#align-inicio{
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+}
+#align-centro{
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+#align-fim{
+    flex-wrap: wrap;
+
+    align-items: flex-end;
+}
+
+
+/* ALIGN-CONTENT */
+#content-inicio{
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+}
+#content-centro{
+    flex-wrap: wrap;
+
+    align-content: center;
+}
+#content-fim{
+    flex-wrap: wrap;
+
+    align-content: flex-end;
+}

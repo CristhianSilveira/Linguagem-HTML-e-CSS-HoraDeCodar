@@ -49,7 +49,7 @@
     display: inline-block;
     background-color: aqua;
     width: 100%;
-    height: 200px;
+    height: 300px;
 
     position: relative; /* Para o elemento na posição absolute caber na div */
 }
@@ -61,6 +61,7 @@
 
 .position .azul{
     position: relative;
+    top: 40px;
     left: 400px;
 
     z-index: 1;
@@ -68,12 +69,15 @@
 
 .position .amarelo{
     position: sticky;
+    height: 93px;
     top: 0;
+
+    z-index: 3;
 }
 
 .position .vermelho{
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 300px;
 
     z-index: 2;

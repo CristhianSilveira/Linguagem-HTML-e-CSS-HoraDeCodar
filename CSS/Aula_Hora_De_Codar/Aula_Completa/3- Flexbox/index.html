@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../2- Position/index.html">Voltar para Position</a>
+    <a href="../4- Flexbox2/index.html" id="linkpos">Ir para Flexbox 2</a>
+
+    <h1>Flexbox:</h1>
+    <h2>Flexbox do Container Pai:</h2>
+    <p>Flex-Direction, Justify-Content, Flex-Wrap, Align-Itens, Align-Content</p>
+
+    <h2>Flex-Direction:</h2>
+    <p>Qual direção o contêiner deseja empilhar os itens flexíveis.</p>
+    <h3>Row:</h3>
+    <div class="container" id="direction-row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>Column:</h3>
+    <div class="container" id="direction-column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    
+    <h2>Justify-Content: (Alinhamento Horizontal)</h2>
+    <h3>Inicio:</h3>
+    <div class="container" id="justify-inicio">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>Centro:</h3>
+    <div class="container" id="justify-centro">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>Fim:</h3>
+    <div class="container" id="justify-fim">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>Between: (Espaçamento igual entre os itens)</h3>
+    <div class="container" id="justify-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h3>Around: (Espaçamento igual ao redor dos itens)</h3>
+    <div class="container" id="justify-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>Flex-Wrap:</h2>
+    <p>Itens flexíveis devem ser encapsulados ou não.</p>
+    <h3>Wrap:</h3>
+    <div class="container" id="flex-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h3>No Wrap:</h3>
+    <div class="container" id="flex-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <h2>Align-Itens:  (Alinhamento Vertical)</h2>
+    <h3>Inicio:</h3>
+    <div class="container" id="align-inicio">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h3>Centro:</h3>
+    <div class="container" id="align-centro">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h3>Fim:</h3>
+    <div class="container" id="align-fim">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <h2>Align-Content: Alinhamento Vertical(Cima Baixo) do conteúdo (ficam grudado)</h2>
+    <h3>Inicio:</h2>
+    <div class="container" id="content-inicio">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h3>Centro:</h2>
+    <div class="container" id="content-centro">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <h3>Fim:</h2>
+    <div class="container" id="content-fim">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>
