@@ -489,3 +489,32 @@ Canal: Hora De Codar: Media Query 30 minutos - 2021.
 
     25.4- Flex responsivo:
                 25.3.1- Caixa flexível responsiva:   EX: @media (max-width: 800px) {.flex-container {flex-direction: column;}  }  Explicando: [é exibido uma coluna para tamanhos de tela pequenos (como telefones e tablets)]
+
+26- Grid:
+    26.1- Introdução:
+        Em CSS, Grid (ou "Grid Layout") é um sistema de layout bidimensional que permite criar layouts complexos e responsivos para elementos HTML. São divididos em colunas e linhas.
+
+    26.2- Container Grid:
+        26.2.1- Introdução:
+            O grid container é definido pela propriedade display como grid.   EX: .grid-container {display: grid;}
+
+        26.2.2- A propriedade grid-template-columns: 
+            A propriedade grid-template-columns especifica a quantidade de colunas na grade   EX: .grid-container {display: grid; grid-template-columns: 100px 1fr 2fr}  >>Explicando: cria três colunas, uma com 100px, outra que ocupa 1 fração do espaço disponível e outra que ocupa 2 frações.
+        
+        26.2.3- A propriedade grid-template-rows:
+            A propriedade grid-template-rows especifica a quantidade de linhas na grade   EX: .grid-container {display: grid; grid-template-rows: 50% 30% 20%}  >>Explicando: especifica três linhas, uma com 50%, outra que ocupa 30% do espaço disponível e outra que ocupa 20%.
+
+        26.2.4- A propriedade grid-template-areas:
+            Define áreas nomeadas dentro da grade para facilitar a criação de layouts mais complexos.   EX: grid-container {display: grid; grid-template-areas: 'header header header header' 'sidebar content content content' 'footer footer footer footer';} >>Explicando: especifica três areas, "header" com 4 colunas, "sidebar" com 1 coluna, "content" com 3 colunas e "footer" com 4 colunas. 
+            
+        26.2.5- A propriedade grid-area:
+            Define o tamanho e a posição de um item dentro da grade, fazendo referência às áreas nomeadas definidas em grid-template-areas.
+
+        26.2.6- Alinhamento de Colunas e Linhas:
+            grid-column-gap e grid-row-gap, Definem o espaçamento entre colunas e linhas, respectivamente. Exemplo: grid-column-gap: 10px; a shorthand é: gap.
+
+        26.2.6: Alinhamento dos itens:
+            justify-content e align-content, Definem o alinhamento dos itens dentro do contêiner da grade, no eixo principal(cima baixo) e transversal(direita esquerda), respectivamente.
+
+        26.2.8- Alinhamento individual dos intens:
+            justify-self e align-self, Definem o alinhamento individual dos itens dentro das células da grade, no eixo principal(cima baixo) e transversal(direita esquerda), respectivamente.

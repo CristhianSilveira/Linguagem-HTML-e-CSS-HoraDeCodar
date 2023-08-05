@@ -1,3 +1,105 @@
 #linkpos {
     float: right;
 }
+
+.container {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+}
+  
+.item {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+#grid-template-columns{
+    grid-template-columns: 100px 1fr 2fr;
+}
+#grid-template-rows{
+    grid-template-rows: 50% 30% 20%;
+}
+#gap{
+    gap: 30px;
+}
+
+
+
+/* TEMPLATE AREAS */
+.containerAreas {
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        'header header header header'
+        'sidebar content content content'
+        'footer footer footer footer';
+}
+#header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: sidebar;
+    height: 50vh;
+}
+#content{
+    grid-area: content;
+}
+#footer{
+    grid-area: footer;
+}
+
+
+
+/* ALINHAMENTO */
+.containerAlign{
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+}
+#justify{
+    justify-content: center;
+}
+#align{
+    align-content: center;
+}
+
+
+
+/* ITENS INDIVIDUAIS */
+.containerItens{
+    background-color: #333;
+    border: 1px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#item-2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item-3{
+    justify-self: end;
+    height: 100px;
+}
+#item-4{
+   align-self: center;
+}
+#item-5{
+    justify-self: start;
+    height: 100px;
+}
+#item-6{
+    align-self: end;
+}
