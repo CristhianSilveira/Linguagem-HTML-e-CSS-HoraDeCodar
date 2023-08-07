@@ -1,0 +1,97 @@
+h1{
+    color: red;
+}
+
+/* 2-Sintaxe */
+@media screen and (max-width: 500px){
+    h1{
+        color: blue;
+    }
+}
+
+/* 3-Outros modos */
+/* screen(tela), print(impressão), speech(leitores de tela), all(todos os dispositivos */
+@media print and (max-width: 600px){
+    h1{
+        color: green;
+    }
+}
+
+/* 4- Todos os modos */
+@media (max-width: 700px){
+    h2 {
+        color: purple;
+    }
+}
+
+/* 5- Mobile First */
+/* min-width para max-width */
+@media (min-width: 200px){
+    h2 {
+        color: teal;
+    }
+}
+
+/* 6- AND na media query*/
+@media (min-width:300px) and (max-width: 400px){
+    h3 {
+        font-size: 3em;
+    }
+}
+
+/* 7- Orientation */
+@media (orientation: landscape){
+    h3 {
+        color: brown;
+    }
+}
+
+/* 9- Cuidado ao aplicar MQ (A ordem importa) */
+/* MQ são ultimas regras */
+h4{
+    color: blue;
+}
+@media (min-width: 600px){
+    h4 {
+        color: red;
+    }
+}
+
+/* 10 - breakpoints */
+h5 {
+    font-size: 3em;
+  }
+  
+  /* 320px - 480px = mobile */
+  /* Em mobile first não precisa de MQ */
+  h5 {
+    color: aqua;
+  }
+  
+  /* 480px - 768px = tablet */
+  @media (min-width: 480px) {
+    h5 {
+      color: burlywood;
+    }
+  }
+  
+  /* 768px - 1024px = telas menores, laptops */
+  @media (min-width: 768px) {
+    h5 {
+      color: cadetblue;
+    }
+  }
+  
+  /* 1024px - 1200px = desktop */
+  @media (min-width: 1024px) {
+    h5 {
+      color: coral;
+    }
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+    h5 {
+      color: darkorchid;
+    }
+  }
